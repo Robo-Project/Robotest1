@@ -31,8 +31,7 @@ step(
     }
 	stage('dbbot') {
       steps {
-        sh "python -m dbbot.run -b postgresql://postgres:postgres@localhost:5432/postgres /var/jenkins_home/workspace/Robotest1_master/data/output.xml
-"
+        sh "python -m dbbot.run -b postgresql://postgres:postgres@localhost:5432/postgres /var/jenkins_home/workspace/Robotest1_master/data/output.xml"
       }
     }
 
