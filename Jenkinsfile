@@ -22,7 +22,7 @@ pipeline {
   }
   post {
          always {
-           robot outputPath: ‘out/’
+           robot outputPath: ‘$(pwd)/data’
            sh "rm -r data"
            sh "docker container prune --force"
                 }
