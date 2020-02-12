@@ -4,8 +4,8 @@ pipeline {
     stage('setup') {
       steps {
           sh "if [[ ! -d '$data' ]] \
-	      then \
-	        mkdir data \
+	        then \
+	          mkdir data \
 	      fi"
       }
     }
