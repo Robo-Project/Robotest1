@@ -3,7 +3,10 @@ pipeline {
   stages {
     stage('setup') {
       steps {
-          sh "mkdir data"
+          sh "if [[ ! -d "$data" ]] \
+	      then \
+	        mkdir data \
+	      fi"
       }
     }
     stage('build and run') {
